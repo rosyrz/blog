@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', ['uses'=>'TaskController@index']);
+Route::get('/', 'TaskController@index');
 
-Route::get('/tasks', ['as'=>'datatable.tasks','uses'=>'TaskController@getTasks']);
+Route::get('/tasks', 'TaskController@getTasks')->name('datatable.tasks');
