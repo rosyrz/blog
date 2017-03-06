@@ -1,29 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Laravel DataTables</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/plugin/datatables/dataTables.bootstrap.css">
-    <link rel="stylesheet" href="css/plugin/datatables/dataTables.bootstrap.min.css">
-    <script src="js/libs/jquery/jquery-2.1.4.min.js"></script>
-    <script src="js/plugin/datatables/jquery.dataTables.min.js"></script>
-    <script src="js/plugin/datatables/dataTables.bootstrap.min.js"></script>
-</head>
-<body>
+@extends('layout.app')
 
-<div class="container">
-    <table id="task" class="table table-hover table-condensed">
-        <thead>
-        <tr>
-            <th>Id</th>
-            <th>Task</th>
-            <th>Category</th>
-            <th>State</th>
-        </tr>
-        </thead>
-    </table>
-</div>
-
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Home</div>
+                    <div class="panel-body">
+                        <table id="task" class="table table-hover table-condensed">
+                            <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Task</th>
+                                <th>Category</th>
+                                <th>State</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+@section('scripts')
 <script type="text/javascript">
     $(document).ready(function() {
         oTable = $('#task').DataTable({
@@ -39,5 +39,4 @@
         });
     });
 </script>
-</body>
-</html>
+@endsection

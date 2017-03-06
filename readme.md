@@ -10,9 +10,29 @@ Implementación básica de DtaTable en Laravel utilizando el paquete yajra/larav
 
 $ composer install
 
+</p>
+
+<p align="center">
+
 $ php artisan key:generate
+
+</p>
+
+<p align="center">
 
 $ php artisan migrate
 
-$ php artisan db:seed
 </p>
+
+<p align="center">
+
+$ php artisan db:seed
+
+</p>
+
+
+
+
+
+
+
