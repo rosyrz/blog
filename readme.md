@@ -14,6 +14,12 @@ $ composer install
 
 <p align="center">
 
+$  cp .env.example .env
+
+</p>
+
+<p align="center">
+
 $ php artisan key:generate
 
 </p>
@@ -29,10 +35,3 @@ $ php artisan migrate
 $ php artisan db:seed
 
 </p>
-
-
-
-
-
-
-
